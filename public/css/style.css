@@ -1,0 +1,41 @@
+body {
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: 'Doctor Satan';
+    src: url('../fonts/DoctorSatan.ttf');
+}
+
+header {
+    text-align: center;
+    height: 120px;
+    padding: 20px;
+    background: linear-gradient(#526e55 0%, #979d45 100%);
+}
+
+.cadavre {
+    font-family: 'Doctor Satan';
+    font-size: 5em;
+    color: #320e06;
+    text-shadow: 3px 3px 5px white;
+}
+
+.exquis {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 2em;
+    color: #daf7a6;
+    text-shadow: 1px 1px 3px white;
+}
+
+main {
+    position: relative;
+    background: radial-gradient( #8ba393, #82534d);
+    height: calc(100vh - 120px);
+    box-shadow: 0 5px 5px black inset;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
