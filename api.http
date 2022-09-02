@@ -10,3 +10,13 @@ GET {{host}}/cadex
 
 ### GET /cadex?verb=se torture
 GET {{host}}/cadex?verb=torture
+
+### POST /cadex
+POST {{host}}/cadex
+Content-Type: application/json
+
+{
+    "name": "Nico",
+    "verb": "se bidonne",
+    "test": "46"
+}

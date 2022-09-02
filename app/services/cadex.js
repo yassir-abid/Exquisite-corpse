@@ -28,6 +28,15 @@ const cadex = {
             },
         };
     },
+    add(update) {
+        Object.keys(update).forEach((propName) => {
+            if (data[`${propName}s`]) {
+                if (!data[`${propName}s`].includes(update[propName])) {
+                    data[`${propName}s`].push(update[propName]);
+                }
+            }
+        });
+    },
 };
 
 module.exports = { cadex, randomIndex, randomInList };
