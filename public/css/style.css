@@ -70,3 +70,21 @@ main {
         opacity: 1;
     }
 }
+
+.button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #979d4533;
+    color: #3D4335;
+    text-shadow: 1px 1px 3px white;
+    border: 3px solid #3D4335;
+    padding: 0.5em 1em;
+    font-size: 1em;
+}
+
+.button:hover {
+    color: white;
+    text-shadow: 1px 1px 3px #3D4335;
+    cursor: pointer;
+}

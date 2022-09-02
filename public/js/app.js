@@ -6,6 +6,7 @@ const app = {
 
     init: async () => {
         await app.fetchCadex();
+        document.querySelector('#again').addEventListener('click', app.fetchCadex);
     },
 
     fetchCadex: async () => {
