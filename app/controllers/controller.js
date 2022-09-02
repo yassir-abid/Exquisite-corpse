@@ -3,7 +3,8 @@ const { cadex } = require('../services/cadex');
 const controller = {
     getCadex(request, response) {
         const cadexObject = cadex.generate();
-        return response.json(cadexObject.glue());
+        const copy = { ...cadexObject, ...request.query };
+        return response.json(copy.glue());
     },
 };
 

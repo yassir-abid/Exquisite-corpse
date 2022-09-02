@@ -7,3 +7,6 @@
 
 ### GET /cadex
 GET {{host}}/cadex
+
+### GET /cadex?verb=se torture
+GET {{host}}/cadex?verb=torture
