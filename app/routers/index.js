@@ -7,6 +7,7 @@ const handleError = require('../middlewares/handleError');
 
 const router = Router();
 
+router.get('/', controller.home);
 router.get('/cadex', controller.getCadex);
 router.post('/cadex', validator(schemaPost, 'body'), controller.postCadex);
 

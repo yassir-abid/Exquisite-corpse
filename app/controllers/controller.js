@@ -1,6 +1,11 @@
+const path = require('path');
 const { cadex } = require('../services/cadex');
 
 const controller = {
+    home(request, response) {
+        return response.status(200).sendFile(path.join(__dirname, '../../public/index.html'));
+    },
+
     getCadex(request, response) {
         const cadexObject = cadex.generate();
         const copy = { ...cadexObject, ...request.query };
