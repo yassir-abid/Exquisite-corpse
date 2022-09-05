@@ -27,6 +27,7 @@
     "eslint-plugin-node": "^11.1.0"
   },
   "dependencies": {
+    "@vercel/node": "^2.5.13",
     "bunyan": "^1.8.15",
     "dotenv": "^16.0.2",
     "express": "^4.18.1",
